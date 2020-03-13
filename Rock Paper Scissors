@@ -1,0 +1,24 @@
+rock paper scissors
+____________________
+********************
+u1=input("name of player 1 please: ")
+u2=input("namem of player 2 please")
+while(1): (
+x=input("Hi %s,which one you wanna choose rock,paper or scossors?" %u1)
+y=input("Hi %s,which one you wanna choose rock,paper or scossors?" %u2)
+if(x==y):
+  print("its a tie....keep on going!")
+elif(x=="rock" and y=="scissors"):
+  print("rock wins")
+elif(x=="rock" and y=="paper"):
+  print("paper wins")
+elif(x=="paper" and y=="rock"):
+  print("paper wins")
+elif(x=="paper" and y=="scissors"):
+  print("scissors wins")
+elif(x=="scissors" and y=="rock"):
+  print("rock wins")
+elif(x=="scissors" and y=="paper"):
+  print("scissors wins")
+else:
+  print("invalid input..try again")
