@@ -4,11 +4,7 @@ _________________
 user=input("enter  the strng please")
 a=[]
 a.append(user)
-
-
 res=user.split()
-
 rev=res[::-1]
-
 f = " ".join(rev)
 print(f)
