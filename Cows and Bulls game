@@ -1,0 +1,28 @@
+import random
+a=random.randint(1000,9999)
+print("Welcome to Bulls and Cows")
+print("Lets start")
+user=str(input("enter a 4 digit numbebr"))
+x=[int(i) for i in str(a)]
+y=[int(j) for j in user]
+j=x.copy()
+k=y.copy()
+cow=0
+bull=0
+for i in range(len(k)):
+  for m in k:
+    if m in j:
+       cow+=1
+       k.remove(m)
+       j.remove(m)
+for i in range(len(x)):
+  for k in range(len(y)):
+    if(x[i]==y[k] and i==k):
+      bull+=1
+      cow-=1
+print("bulls: ",bull)
+print("cows: ",cow)
+if(bull==4):
+  print("wow! You guessed it right")
+print("The random number was: ",a)
+print("Keep on trying..")
