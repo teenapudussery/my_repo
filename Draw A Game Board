@@ -1,0 +1,13 @@
+def row():
+     for i in range(n):
+       print(" ---",end=" ")
+     print("\n")
+def column():
+      for i in range(n+1):
+        print("|   ",end=" ")
+      print("\n")
+n=int(input("enter the size of board"))
+for i in range(n):
+   row()
+   column()
+row()
